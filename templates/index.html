@@ -1,0 +1,492 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-cell AU</title>
+    <meta property="og:title" content="Tasty General Flamingo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&amp;display=swap"
+      data-tag="font"
+    />
+  
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .au-logo{
+        max-width: 40px;
+        margin-right: 20px;
+      }
+      .home-container{
+        background-color: rgb(7, 5, 29)
+      }
+      @media(max-width:500px){
+      #collaborator-card{
+        margin-right: 20%;
+      }
+      #collaborator-card p{
+        margin-left: 20%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div>
+        <link href="{% static 'css/index.css' %}" rel="stylesheet" />
+
+      <div class="home-container" id="home">
+        <div class="home-header">
+          <header data-thq="thq-navbar" class="navbarContainer home-navbar-interactive">
+            <img class="au-logo" src="{% static 'css/logo3.png' %}">
+              <span class="logo">AAVISHKARAN</span>
+              <!-- Hamburger menu icon and dropdown toggle -->
+              <div class="dropdown-toggle">
+                  <!-- Hamburger menu icon -->
+                  
+                  <div class="home-burger-menu">
+                    <div class="hamburger-menu-icon"></div>
+                </div>
+                  <!-- Dropdown menu -->
+                  <div class="dropdown-menu">
+                      <a href="#home" class="dropdown-menu-item home-nav121 bodySmall">E-Cell</a>
+                      <a href="#home-container04" class="dropdown-menu-item home-nav221 bodySmall">What We Do</a>
+                      <a href="#home" class="dropdown-menu-item home-nav321 bodySmall">How It Works</a>
+                      <a href="{% url 'past_events' %}" class="dropdown-menu-item home-nav421 bodySmall">Past Events</a>
+                      <a href="#collaborator-card" class="dropdown-menu-item home-nav621 bodySmall">About</a>
+                      <a href="#home-faq" class="dropdown-menu-item home-nav721 bodySmall">FAQ</a>
+                  </div>
+              </div>
+          
+              
+          </header>
+      </div>
+      
+      
+        
+      
+        <div class="home-hero">
+          <div class="heroContainer home-hero1">
+            <div class="home-container01">
+              <h1 class="home-hero-heading heading1">
+                Welcome to Aavishkaran 
+              </h1>
+              <a href="https://anurag.edu.in/" target="_blank">
+              <img src="{% static 'css/anurag.png' %}" style="width: 15rem;">
+              </a>
+              <h1 class="home-hero-heading heading1" style="font-size: 2rem;">
+                E-CELL
+              </h1>
+              <span class="home-hero-sub-heading bodyLarge">
+                    <span>Empowering Entrepreneurs of Tomorrow</span>
+              </span>
+                <!-- <div class="home-btn-group">
+                <button class="buttonFilled">Explore More</button>
+                <button class="buttonFlat">Learn More&nbsp;→</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="incube-container">
+            <div class="incube-content">
+                <h2>Join the Innovation Wave</h2><br>
+                <p>Got a brilliant startup idea or product? Let's make it happen together! Share your vision with 
+                  us and be part of our innovation journey. Join our entrepreneurial community today!</p>
+                <div class="incube-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckOYLkD2NZXViDkxnY4LpHLxYHe_T7c-NL1BaE9Mm03xOfNQ/viewform" target="_blank">Click Here</a>
+                </div>
+            </div>
+            <div class="incube-image">
+                <img src="../static/css/launchpad1.png" alt="Image">
+            </div>
+        </div>
+        <div class="home-features">
+          <div class="featuresContainer">
+            <div class="home-features1">
+              <div class="home-container02">
+                <span class="overline">
+                  <span>features</span>
+                  <br />
+                </span>
+                <h2 class="home-features-heading heading2">
+                  Discover What Aavishkaran Offers
+                </h2>
+                <span class="home-features-sub-heading bodyLarge">
+                      <span>
+                        Explore the key features of our entrepreneurship cell
+                      </span>
+                </span>
+                    
+              </div>
+              <div class="home-container03">
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <a href= "{% url 'past_events' %}" class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Past Events</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Take a look into our track record , so you can have an idea about the one we're about to forge.
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="featuresCard feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="featuresIcon">
+                    <path
+                      d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Resources</span>
+                    </h3>
+                    <span class="bodySmall">
+                      <span>
+                        Dive in to our lucrative bounty of videos 
+                        to keep yourself in touch with progressing terminology and  current happenings<br>
+                        <br>Coming Soon....
+                      </span>
+                    </span>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-pricing">
+          <div class="pricingContainer">
+            <div class="home-container04" id="home-container04">
+              <span class="overline">
+                <span style="font-size: 1.2rem;">Support from our e-cell</span>
+                <br/>
+              </span>
+              <h2 class="heading2">Participate, Learn and Excute</h2>
+              <span class="home-pricing-sub-heading bodyLarge">
+                <span>
+                  <span>
+                    Unlock the full potential of Aavishkaran with our flexible
+                    mentoring
+                  </span>
+                </span>
+              </span>
+            </div>
+            <div class="home-container05">
+              <div class="freePricingCard home-pricing-card">
+                <div class="home-container06">
+                  <span class="home-text36 heading3">For people with no idea</span>
+                  <span class="bodySmall">Key points</span>
+                </div>
+                
+                <div class="home-container08">
+                  <div class="home-container09">
+                    <span class="home-text40">✔</span>
+                    <span class="bodySmall">We bring awareness about entrepreneurship</span>
+                  </div>
+                  <div class="home-container10">
+                    <span class="home-text41">✔</span>
+                    <span class="bodySmall">We bring knowledge through our social media handle</span>
+                  </div>
+                  <div class="home-container11">
+                    <span class="home-text42">✔</span>
+                    <span class="bodySmall">guidance</span>
+                  </div>
+                </div>
+                <a href="#" class="home-button1 buttonFilledSecondary">
+                  Coming soon...</a>
+              </div>
+              <div class="basicPricingCard home-pricing-card1">
+                <div class="home-container12">
+                  <span class="home-text43 heading3">For people with idea</span>
+                  <span class="bodySmall">Key points</span>
+                </div>
+                
+                <div class="home-container14">
+                  <div class="home-container15">
+                    <span class="home-text48">✔</span>
+                    <span class="bodySmall">We give suggestions to make your idea into a stepping start-up</span>
+                  </div>
+                  <div class="home-container16">
+                    <span class="home-text50">✔</span>
+                    <span class="bodySmall">Providing Incubation</span>
+                  </div>
+                  <div class="home-container17">
+                    <span class="home-text51">✔</span>
+                    <span class="bodySmall">guidance</span>
+                  </div>
+                 
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckOYLkD2NZXViDkxnY4LpHLxYHe_T7c-NL1BaE9Mm03xOfNQ/viewform" target="_blank" class="home-button1 buttonFilledSecondary">
+                Click Here</a>
+              </div>
+              <div class="proPricingCard home-pricing-card2">
+                <div class="home-container20">
+                  <span class="home-text54 heading3">
+                    <span>For people with a startup </span>
+                    <br />
+                  </span>
+                  <span class="bodySmall" >key points</span>
+                </div>
+                
+                <div class="home-container22">
+                  <div class="home-container23">
+                    <span class="home-text61">✔</span>
+                    <span class="bodySmall">
+                      &nbsp;Come and join with us we will guide you to make your start-up to step towards success
+                    </span>
+                  </div>
+                  <div class="home-container24">
+                    <span class="home-text63">✔</span>
+                    <span class="bodySmall">Talks with top personality</span>
+                  </div>
+                  <div class="home-container25">
+                    <span class="home-text64">✔</span>
+                    <span class="bodySmall">Turning into business model</span>
+                  </div>
+                  <div class="home-container25">
+                    <span class="home-text64">✔</span>
+                    <span class="bodySmall">guidance</span>
+                  </div>
+                  
+                </div>
+                <a href="#" class="home-button1 buttonFilledSecondary">
+                  Coming soon...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="home-banner-heading heading2 "style="background-color:rgba(7,5,29);color:white">
+          Collaborators
+        </h1>
+        <div class="collaborator-container" style="margin-bottom: 50px;">
+         
+        <div class="collaborator-card">
+            <img src="../static/css/wallet.png" alt="Wallet Watch Dogs" style="max-width:200px">
+            <p style="font-size: 1.3rem; margin-top:15px">Wallet Watch Dogs</p>
+        </div>
+        
+        <div class="collaborator-card" style=" margin-bottom:20px" id="collaborator-card">
+            <img src="../static/css/flexpay.jpeg" alt="Flexpay" >
+            <p style="font-size: 1.5rem; margin-top:15px">Flexpay</p>
+        </div>
+        
+        <div class="collaborator-card" id="collaborator-card">
+            <img src="../static/css/gravity.jpeg" alt="Company 3">
+            <p style="font-size: 1.3rem; margin-top:15px">Challenge the gravity</p>
+        </div>
+    </div>
+        <div class="home-banner" >
+          <div class="bannerContainer home-banner1">
+            <h1 class="home-banner-heading heading2">
+              About Aavishkaran E-Cell
+            </h1>
+            <span class="home-banner-sub-heading bodySmall">
+              <span>
+                <span>
+                  <span>
+                    Aavishkaran E-Cell at our college is a platform dedicated to
+                    fostering innovation, creativity, and entrepreneurship among
+                    students. We provide resources, mentorship, and
+                    opportunities for aspiring entrepreneurs to turn their ideas
+                    into reality. Join us in shaping the future of
+                    entrepreneurship!
+                  </span>
+                </span>
+              </span>
+            </span>
+            <button class="buttonFilled">Learn More</button>
+          </div>
+        </div>
+        <div class="home-faq" id="home-faq">
+          <div class="faqContainer">
+            <div class="home-faq1">
+              <div class="home-container28">
+                <span class="overline">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="home-text84 heading2">Common questions</h2>
+                <span class="home-text85 bodyLarge">
+                  <span>
+                    Here are some of the most common questions that we get.
+                  </span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-container29">
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>What is Aavishkaran E-Cell?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      Aavishkaran E-Cell is the entrepreneurship cell of our
+                      college dedicated to fostering entrepreneurial spirit
+                      among students.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>How can I get involved with Aavishkaran E-Cell?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      You can get involved by participating in our events,
+                      workshops, and competitions or by joining as a member of
+                      the E-Cell team.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>
+                      What kind of events does Aavishkaran E-Cell organize?
+                    </span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      Aavishkaran E-Cell organizes a variety of events including
+                      startup pitch competitions, guest lectures, networking
+                      sessions, and hackathons.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>How can I stay updated about upcoming events?</span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      You can stay updated about upcoming events by regularly
+                      visiting our website or following us on social media
+                      platforms for announcements.
+                    </span>
+                  </span>
+                </div>
+                <div class="question1-container">
+                  <span class="question1-text heading3">
+                    <span>
+                      Can non-business students participate in Aavishkaran
+                      E-Cell activities?
+                    </span>
+                  </span>
+                  <span class="bodySmall">
+                    <span>
+                      Yes, Aavishkaran E-Cell welcomes participation from
+                      students of all disciplines who are interested in
+                      entrepreneurship and innovation.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-footer">
+          <footer class="footerContainer home-footer1">
+            <div class="home-container30">
+              <span class="logo">AAVISHKARAN</span>
+              <style>
+                .icons{
+                  width: 100px;
+                  display: flex;
+                  gap: 10px;
+                }
+                .icons img{
+                  max-width: 100px;
+                  margin-left: 20px;
+                  
+                }
+              </style>
+              
+              <div class="icons">
+              <a href="https://www.instagram.com/aavishkaran_au/" target="_blank">
+              <img width="24" height="24" src="https://img.icons8.com/material/24/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
+              </a>
+              <a href="https://www.linkedin.com/company/aavishkaran-au/" target="_blank">
+              <img width="24" height="24" src="https://img.icons8.com/material/24/FFFFFF/linkedin--v1.png" alt="linkedin--v1"/>
+              </a>
+            </div>
+            </div>
+            <div class="home-separator"></div>
+            <div class="home-container31">
+              <span class="bodySmall home-text88" style="text-align: center; margin-left:40%">
+                © 2024 Aavishkaran, All Rights Reserved.
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+      ></script>
+  <script>
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerIcon = document.querySelector('.hamburger-menu-icon');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+        // Add click event listener to the hamburger icon
+        hamburgerIcon.addEventListener('click', function() {
+            // Toggle the 'active' class on the dropdown menu
+            dropdownMenu.classList.toggle('active');
+        });
+    });
+
+
+      
+    </script>
+    <a  href="https://icons8.com/icon/84884/instagram"></a> <a href="https://icons8.com"></a>
+              <a  href="https://icons8.com/icon/84888/linkedin"></a>  <a href="https://icons8.com"></a>
+    
+  </body>
+  
+</html>
+
